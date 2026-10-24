@@ -11,6 +11,12 @@
     "typecheck": "npm run typecheck --prefix frontend",
     "build:web": "npm run build:web --prefix frontend",
     "test:backend": "npm test --prefix backend",
+    "supabase:login": "npm run supabase:login --prefix backend",
+    "supabase:link": "npm run supabase:link --prefix backend",
+    "db:status": "npm run db:status --prefix backend",
+    "db:push": "npm run db:push --prefix backend",
+    "db:baseline": "npm run db:baseline --prefix backend",
+    "db:new": "npm run db:new --prefix backend",
     "format": "npm run format --prefix frontend -- .. && echo formatted",
     "format:check": "npm run format:check --prefix frontend -- .."
   }
