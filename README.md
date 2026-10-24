@@ -32,8 +32,9 @@ npm run test:backend # checks the database security rules
 ```
 
 With no Supabase keys the app runs in **demo mode** with three sample pets stored on the
-device. To use a real backend, follow [backend/README.md](backend/README.md) and add your keys
-to `frontend/.env.local`.
+device. To use a real backend, add keys to `frontend/.env.local` and link the database from the
+terminal — see [backend/README.md](backend/README.md) (`supabase:login`, `supabase:link`,
+`db:baseline`, `db:push`).
 
 ## Root commands
 
@@ -45,6 +46,8 @@ to `frontend/.env.local`.
 | `npm run typecheck`    | Type-check the app                                 |
 | `npm run build:web`    | Build the web version into `frontend/dist`         |
 | `npm run test:backend` | Run the database permission tests                  |
+| `npm run supabase:link` | Link `backend/` to your Supabase project (after login) |
+| `npm run db:push`      | Apply new SQL migrations to the linked project     |
 | `npm run format`       | Format all code with Prettier                      |
 
 This app keeps owner records. It does not give medical advice.

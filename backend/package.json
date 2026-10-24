@@ -6,10 +6,17 @@
   "description": "PetPassport database schema, security rules and tests (Supabase).",
   "scripts": {
     "test": "node tests/rls.test.mjs",
+    "supabase:login": "supabase login",
+    "supabase:link": "node scripts/link-project.mjs",
+    "db:status": "supabase migration list --linked",
     "db:push": "supabase db push",
+    "db:baseline": "node scripts/baseline-linked.mjs",
+    "db:new": "supabase migration new",
+    "db:diff": "supabase db diff --linked -f",
     "db:reset": "supabase db reset"
   },
   "devDependencies": {
-    "@electric-sql/pglite": "^0.5.10"
+    "@electric-sql/pglite": "^0.5.10",
+    "supabase": "^2.122.0"
   }
 }
