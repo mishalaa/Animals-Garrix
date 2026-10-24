@@ -1,0 +1,17 @@
+{
+  "name": "petpassport",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pet health records app: Expo frontend and Supabase backend.",
+  "scripts": {
+    "setup": "npm install --prefix frontend && npm install --prefix backend",
+    "start": "npm run start --prefix frontend",
+    "web": "npm run web --prefix frontend",
+    "android": "npm run android --prefix frontend",
+    "typecheck": "npm run typecheck --prefix frontend",
+    "build:web": "npm run build:web --prefix frontend",
+    "test:backend": "npm test --prefix backend",
+    "format": "npm run format --prefix frontend -- .. && echo formatted",
+    "format:check": "npm run format:check --prefix frontend -- .."
+  }
+}

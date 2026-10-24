@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Generated native projects (Expo creates these from app.json)
+frontend/android/
+frontend/ios/
+
+# Signing keys
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# Supabase CLI local state
+backend/supabase/.temp/
+backend/supabase/.branches/
+
+# Metro / debug
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+.kotlin/
+*.orig.*
+
+# OS
+.DS_Store
+
+# Local env files (keys)
+.env*.local
