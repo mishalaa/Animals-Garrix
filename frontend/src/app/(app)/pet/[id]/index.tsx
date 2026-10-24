@@ -229,6 +229,8 @@ export default function PetDetail() {
         {tab === 'reports' && <ReportsTab data={data} />}
         {tab === 'origin' && <OriginTab data={data} />}
       </View>
-    </ScrollView>
-  );
+    </View>
+  </ScrollView>
+);
 }
+

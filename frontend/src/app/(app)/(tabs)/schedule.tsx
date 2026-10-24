@@ -7,7 +7,7 @@ import { EmptyState, Loading, Screen, SectionTitle, T } from '@/components/ui';
 import { usePets, useRecords } from '@/hooks/queries';
 import { addDays, localeTag, today } from '@/lib/dates';
 import { buildAgenda, dosesBetween } from '@/lib/schedule';
-import { colors, radius, space } from '@/theme';
+import { colors, radius, shadow, space } from '@/theme';
 
 export default function Schedule() {
   const { t, i18n } = useTranslation();
