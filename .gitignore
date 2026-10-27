@@ -37,5 +37,12 @@ yarn-error.*
 .DS_Store
 
 # Local env files (keys)
+.env
+.env*
 .env*.local
 backend/.env
+frontend/.env
+frontend/.env.local
+!.env.example
+!*.env.example
+
