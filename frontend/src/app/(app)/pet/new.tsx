@@ -1,5 +1,5 @@
-import { PetForm } from '@/components/pet/PetForm';
+import { PetCardStackForm } from '@/components/pet/PetCardStackForm';
 
 export default function NewPet() {
-  return <PetForm />;
+  return <PetCardStackForm />;
 }
